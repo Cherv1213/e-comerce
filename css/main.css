@@ -1,0 +1,51 @@
+@import url(normalize.css);
+.category-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-max-content clamp(1rem, 10vw, 7.5rem) 1fr;
+  -ms-grid-columns: max-content clamp(1rem, 10vw, 7.5rem) 1fr;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
+  gap: clamp(1rem, 10vw, 7.5rem);
+}
+
+.menu__block h4 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #151515;
+  margin-bottom: 1rem;
+}
+
+.menu__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.75rem;
+}
+.menu__list li:last-of-type {
+  margin-bottom: 3rem;
+}
+.menu__list li a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  text-decoration-line: underline;
+  color: #6A983C;
+}
+
+.menu__button {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  padding: 12.5px 1rem;
+  background: #F5F5F5;
+  border-radius: 12px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.menu__button:hover {
+  background: #bbbaba;
+}
