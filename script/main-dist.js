@@ -102,6 +102,7 @@ new Swiper('.customers-swiper',{
     breakpoints:{
        1000:{
          slidesPerView:3.5,
+         centeredSlides: true,
        },
        500:{
          slidesPerView:2,
@@ -110,7 +111,6 @@ new Swiper('.customers-swiper',{
          slidesPerView:1,
        },
     },
-    centeredSlides: true,
     navigation: {
        nextEl: '.swiper-button-next',
        prevEl: '.swiper-button-prev',
