@@ -1,6 +1,11 @@
-$clr-green:#6A983C;
-$clr-def:#151515;
 
+$clr-green:#6A983C;
+$font-fam:'Open Sans' sans-serif;
+$clr-smll-text:#575757;
+$clr-def:#151515;
+$clr--f5f5:#F5F5F5;
+$clr--f9f9:#F9F9F9;
+/*-------------------------------------------------------------------------------------------------*/
 @import url(normalize.css);
 
 .header {
@@ -76,7 +81,7 @@ $clr-def:#151515;
    display: flex;
    border-radius: 0.75rem;
    padding: 0.5rem 1rem;
-   background-color: #F9F9F9;
+   background-color: $clr--f9f9;
    border: 1px solid #D1D1D1;
    white-space: nowrap;
 
@@ -97,6 +102,7 @@ $clr-def:#151515;
 
    &:after{
       content: url(../image/arrowToBottom.svg);
+      display: inline-block;
       position: relative;
       top: -0.1875rem;
       width: 1rem;
@@ -110,30 +116,7 @@ $clr-def:#151515;
 
 /*-------------------------------------------------------------------------------------------------*/
 
-.sub__list{
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   background-color: #F9F9F9;
-   border-radius: 0 0 12px 12px;
-   height: 0px;
-   transition: .5s;
-   opacity: 0;
-  }
-  .search__text:hover .sub__list, .sub__item {
-   top: 30px;
-   height: 10rem;
-   padding: 1rem 1rem 1rem 0.5rem;
-   opacity: 1;
 
-  }
-.sub__item {
-   height: 0;
-}
-.sub__link {
-  color: $clr-def;
-}
 /*-------------------------------------------------------------------------------------------------*/
 
 .search-form {
@@ -147,7 +130,7 @@ $clr-def:#151515;
 .search__input {
    height: 100%;
    width: 100%;
-   background-color: #F9F9F9;
+   background-color: $clr--f9f9;
 
    &::placeholder{
       color: #D1D1D1;

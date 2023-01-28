@@ -1,3 +1,4 @@
+/*-------------------------------------------------------------------------------------------------*/
 @import url(normalize.css);
 .header {
   font-family: "Poppins";
@@ -101,6 +102,7 @@
 }
 .search__text:after {
   content: url(../image/arrowToBottom.svg);
+  display: inline-block;
   position: relative;
   top: -0.1875rem;
   width: 1rem;
@@ -112,34 +114,6 @@
 }
 
 /*-------------------------------------------------------------------------------------------------*/
-.sub__list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #F9F9F9;
-  border-radius: 0 0 12px 12px;
-  height: 0px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0;
-}
-
-.search__text:hover .sub__list, .sub__item {
-  top: 30px;
-  height: 10rem;
-  padding: 1rem 1rem 1rem 0.5rem;
-  opacity: 1;
-}
-
-.sub__item {
-  height: 0;
-}
-
-.sub__link {
-  color: #151515;
-}
-
 /*-------------------------------------------------------------------------------------------------*/
 .search-form {
   margin-left: clamp(0px, 1vw, 1.5rem);
