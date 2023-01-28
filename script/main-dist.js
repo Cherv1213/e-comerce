@@ -153,12 +153,12 @@ new Swiper('.customers-swiper',{
    //  freeMode:true,
 
    //  //автопрокрутка
-   //   autoplay:{
-   //     delay:2000,
+      autoplay:{
+        delay:2000,
    // //    stoponLastSlide:true,
    // //    //отключить после ручного переключения
-   //     disableOnInteraction: false,
-   //   },
+        disableOnInteraction: false,
+      },
    
    //  //эффекты переключения слайдов
    //  effect: 'slide',// 'fade', 'cube', 'coverflow', 'flip'  'creative',

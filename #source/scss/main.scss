@@ -397,6 +397,7 @@ $pad-top-bot: clamp(1rem, 4vw,4rem);
 
          @media (max-width: 800px){
             grid-template-columns: 1fr;
+            column-gap: 0;
          }
       
    }
