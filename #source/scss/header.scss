@@ -86,15 +86,21 @@ $clr--f9f9:#F9F9F9;
 .select__wrapper{
    position: relative;
    margin-right: clamp(0.625rem,3vw,3rem);
+
+
    &::after{
       content: url(../image/arrowToBottom.svg);
       position: absolute;
       right: 0;
       top: 0;
+      display: block;
       width: 1rem;
       height: 1rem;
+
+      pointer-events: none;
    }
 }
+
 .form-select{
    appearance: none;
    background-color: $clr--f9f9;
@@ -103,10 +109,17 @@ $clr--f9f9:#F9F9F9;
    border: none;
    outline: none;
    cursor: pointer;
-   padding-right: 20px;
+   padding:2px 20px 2px 2px ;
+   border-radius: 5px;
+
+   &:focus{
+      outline: none;
+   }
+
    & option{
       font-weight: 700;
       font-size: 15px;
+      margin-bottom: 1rem;
    }
 }
 .search__input {
