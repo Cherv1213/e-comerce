@@ -166,17 +166,54 @@
 
 .user__basket {
   position: relative;
+  cursor: pointer;
 }
-.user__basket::before {
-  content: "4";
-  font-size: 14px;
-  padding: 0.3125rem 0.4375rem;
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0deg, 0%, 0%, 0.808);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  padding: 1rem;
+  background-color: #151515;
+  border-radius: 12px;
+  position: relative;
+}
+
+.open {
+  left: 0;
+}
+
+.close-modal {
   position: absolute;
-  bottom: -0.8125rem;
-  left: -0.6rem;
+  top: -10px;
+  right: -10px;
+  font-size: 2rem;
   color: #fff;
-  background: #E6704B;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lock {
+  overflow: hidden;
 }

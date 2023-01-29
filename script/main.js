@@ -1,4 +1,20 @@
 "use strict"
+const openModal = document.querySelector('.user__basket');
+const modalBody = document.querySelector('.modal-wrapper');
+const closeX = document.querySelector('.close-modal');
+
+if(openModal){
+   openModal.addEventListener('click',function(e){
+      document.body.classList.add('lock');
+      modalBody.classList.add('open');
+   });
+}
+if(closeX){
+   closeX.addEventListener('click',function(e){
+      modalBody.classList.remove('open');
+      document.body.classList.remove('lock');
+   });
+}
 
 
 /*-------------------------------------------------------------------------------------------------*/
