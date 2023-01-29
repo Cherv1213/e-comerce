@@ -95,7 +95,13 @@ $pad-top-bot: clamp(1rem, 4vw,4rem);
    column-gap: 2.5rem;
    row-gap: 1rem;
    flex-wrap: wrap;
-   & li::after{
+   & > li{
+      position: relative;
+   }
+   & > li:hover .sub-list{
+      display: block;
+   }
+   & > li::after{
       content: url(../image/arrowToBottom.svg);
       position: relative;
       top: -0.1875rem;
@@ -108,6 +114,25 @@ $pad-top-bot: clamp(1rem, 4vw,4rem);
    font-weight: 500;
       font-size: 0.9375rem;
       color: $clr-def;
+}
+.sub-list {
+   position: absolute;
+   display: none;
+   padding-top: 20px;
+   top: 10px;
+   left: 0;
+   width: 100%;
+   border-radius: 12px;
+   min-width: 6rem;
+   z-index: 10;
+   & li {
+      background-color: #6A983C;
+      padding: 1rem 5px;
+   }
+}
+.sub__link {
+   color: inherit;
+   display: inline-block;
 }
 
 /*-----------------------------------category--------------------------------------------------------------*/

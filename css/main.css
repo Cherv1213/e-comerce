@@ -93,7 +93,13 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.chapter__list li::after {
+.chapter__list > li {
+  position: relative;
+}
+.chapter__list > li:hover .sub-list {
+  display: block;
+}
+.chapter__list > li::after {
   content: url(../image/arrowToBottom.svg);
   position: relative;
   top: -0.1875rem;
@@ -106,6 +112,27 @@
   font-weight: 500;
   font-size: 0.9375rem;
   color: #151515;
+}
+
+.sub-list {
+  position: absolute;
+  display: none;
+  padding-top: 20px;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  border-radius: 12px;
+  min-width: 6rem;
+  z-index: 10;
+}
+.sub-list li {
+  background-color: #6A983C;
+  padding: 1rem 5px;
+}
+
+.sub__link {
+  color: inherit;
+  display: inline-block;
 }
 
 /*-----------------------------------category--------------------------------------------------------------*/
