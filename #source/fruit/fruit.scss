@@ -59,11 +59,22 @@ main{
       content: url(../image/fruits/line.svg);
    }
 }
+.prod-block{
+display: flex;
+align-items: center;
+
+& span{
+   font-weight: 600;
+      font-size: 0.75rem;
+      color: $clr-green;
+      background: #F4F8EC;
+      border-radius: 12px;
+      padding: 0px 6px;
+}
+}
 .prodacts {
 }
-.clr-def{
-   color: $clr-def;
-}
+
 
 /*-----------------------------filter--------------------------------------------------------------------*/
 .form__container {
