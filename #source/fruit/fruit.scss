@@ -8,7 +8,36 @@ $clr--f5f5:#F5F5F5;
 $clr--f9f9:#F9F9F9;
 $pad-top-bot: clamp(1rem, 4vw,4rem);
 
+.sml-green{
+   font-weight: 600;
+   font-size: 0.75rem;
+   color: $clr-green;
+   background: #F4F8EC;
+   border-radius: 12px;
+   padding: 2px 6px;
+ }
+ .title {
+   font-weight: 600;
+   font-size: 1.125rem;
+   color: $clr-def;
+   margin-bottom: 1rem;
+}
+.def-list div{
+   margin-bottom: 0.875rem;
+}
+.def-list p, label{
+   font-family: 'Open Sans';
+   font-weight: 400;
+   font-size: 0.875rem;
+}
 
+.button{
+   background: #6A983C;
+   border: 2px solid #46760A;
+   border-radius: 0.75rem;
+   color: #ffff;
+   padding: 0.75rem 1rem;
+}
 /*--------------------------------------top-body -----------------------------------------------------------*/
 main{
    line-height: 1.5;
@@ -64,11 +93,6 @@ display: flex;
 align-items: center;
 
 & span{
-   font-weight: 600;
-      font-size: 0.75rem;
-      color: $clr-green;
-      background: #F4F8EC;
-      border-radius: 12px;
       padding: 0px 6px;
 }
 }
@@ -213,4 +237,73 @@ align-items: center;
    & select{
       background-color: inherit;
    }
+}
+/*-------------------------------------------------------------------------------------------------*/
+.shop__content {
+   padding: $pad-top-bot;
+}
+
+.shop-body {
+   display: grid;
+   grid-template-columns: 16.875rem 1fr;
+   gap: 32px;
+}
+.side__bar {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+.side-category {
+}
+.side-item {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.side-brands {
+}
+.brands-item {
+   position: relative;
+
+   & .checkbox__fake{
+      left: 0;
+   }
+   
+   & label > img{
+     display: inline-block;
+     position: relative;
+     top: 5px;
+     width: 0.875rem;
+     height: 0.875rem;
+   }
+}
+
+
+.checkbox__fake {
+}
+
+.side__rating {
+}
+
+.side__price {
+}
+
+.side__buttons {
+   display: flex;
+   gap: 2.875rem;
+  
+   
+}
+.button-reset{
+   font-weight: 700;
+   font-size: 0.9375rem;
+   color: #A9A9A9;
+   background-color: transparent;
+   }
+
+
+
+
+.main__content {
 }
