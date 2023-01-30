@@ -184,9 +184,11 @@ $clr--f9f9:#F9F9F9;
    display: flex;
    justify-content: center;
    align-items: center;
+   padding:1rem;
 }
 .basket-modal {
    display: flex;
+   height: 500px;
    max-width: 100%;
    padding: 1rem;
    background-color: #151515;
