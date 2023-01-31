@@ -9,20 +9,13 @@ if(openModal){
       modalBody.classList.add('open');
    });
 }
-if(closeX){
-   closeX.addEventListener('click',function(e){
+if(closeX,modalBody){
+   closeX,modalBody.addEventListener('click',function(e){
       modalBody.classList.remove('open');
       document.body.classList.remove('lock');
    });
 }
 /*-------------------------------------------------------------------------------------------------*/
-const gridOpen = document.querySelector('.grid');
-const howView = document.querySelectorAll('.how-view');
-
-
-
-  /*-------------------------------------------------------------------------------------------------*/
-
 
 
 
