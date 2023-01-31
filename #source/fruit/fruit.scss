@@ -307,3 +307,15 @@ align-items: center;
 
 .main__content {
 }
+.body-content{
+   display: none;
+}
+.active{
+   display: block;
+}
+
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(16rem,1fr));
+   gap: 2rem;
+}

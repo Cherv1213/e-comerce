@@ -18,7 +18,6 @@ if(closeX,modalBody){
 /*-------------------------------------------------------------------------------------------------*/
 
 
-
 /*-------------------------------------------------------------------------------------------------*/
 const headerItem = document.querySelectorAll('.tab__item');
 const mainContent = document.querySelectorAll('.tab-content');
@@ -185,3 +184,5 @@ new Swiper('.customers-swiper',{
    //  effect: 'slide',// 'fade', 'cube', 'coverflow', 'flip'  'creative',
      watchOverflow: true,
 });
+
+
