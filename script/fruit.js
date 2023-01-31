@@ -24,4 +24,4 @@ tabLink.forEach(function(item){
    });
 });
    
-document.querySelector('.tab-link').click();
+ document.querySelector('.tab-link').click();
