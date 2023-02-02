@@ -1,6 +1,26 @@
+
+
+
+const openModal = document.querySelector('.user__basket');
+const modalBody = document.querySelector('.modal-wrapper');
+const closeX = document.querySelector('.close-modal');
+
+if(openModal){
+   openModal.addEventListener('click',function(e){
+      document.body.classList.add('lock');
+      modalBody.classList.add('open');
+   });
+}
+if(closeX,modalBody){
+   closeX,modalBody.addEventListener('click',function(e){
+      modalBody.classList.remove('open');
+      document.body.classList.remove('lock');
+   });
+}
+
+/*-------------------------------------------------------------------------------------------------*/
 const tabLink = document.querySelectorAll('.tab-link');
 const bodyContent = document.querySelectorAll('.body-content');
-
 
 tabLink.forEach(function(item){
    item.addEventListener("click", function(){
@@ -25,3 +45,6 @@ tabLink.forEach(function(item){
 });
    
  document.querySelector('.tab-link').click();
+
+
+

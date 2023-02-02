@@ -8,7 +8,7 @@ $clr--f9f9:#F9F9F9;
 $pad-top-bot: clamp(1rem, 4vw,4rem);
 
 footer {
-   padding: $pad-top-bot 15px;
+   padding: $pad-top-bot 0;
    line-height: 1.5;
 }
 .footer-top {

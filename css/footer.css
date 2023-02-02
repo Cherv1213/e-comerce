@@ -1,6 +1,6 @@
 @import url(normalize.css);
 footer {
-  padding: clamp(1rem, 4vw, 4rem) 15px;
+  padding: clamp(1rem, 4vw, 4rem) 0;
   line-height: 1.5;
 }
 
