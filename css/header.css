@@ -169,46 +169,26 @@
   cursor: pointer;
 }
 
-.modal-wrapper {
-  position: fixed;
-  left: 0;
-  z-index: 50;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(0deg, 0%, 0%, 0.808);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 1rem;
-  -webkit-transition: 1s;
-  transition: 1s;
-  opacity: 0;
-  top: -100%;
-}
-
 .basket-modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 500px;
-  max-width: 100%;
+  width: 500px;
   padding: 1rem;
   background-color: #151515;
   border-radius: 12px;
-  position: relative;
+  z-index: 100;
+  color: #fff;
 }
 
-.open {
-  opacity: 1;
-  top: 0;
+.basket-modal.open {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .basket__amount {
@@ -231,8 +211,8 @@
 .close-modal {
   position: absolute;
   z-index: 55;
-  top: -10px;
-  right: -10px;
+  top: 0px;
+  right: 0px;
   font-size: 2rem;
   color: #fff;
   cursor: pointer;

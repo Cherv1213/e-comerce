@@ -1,22 +1,26 @@
+const link = document.querySelector('.link-fruit');
 
-
+link.addEventListener('click', function(event){
+   event.preventDefault();
+});
 
 const openModal = document.querySelector('.user__basket');
-const modalBody = document.querySelector('.modal-wrapper');
+const modalBody = document.querySelector('.basket-modal');
 const closeX = document.querySelector('.close-modal');
 
-if(openModal){
-   openModal.addEventListener('click',function(e){
-      document.body.classList.add('lock');
-      modalBody.classList.add('open');
-   });
-}
-if(closeX,modalBody){
-   closeX,modalBody.addEventListener('click',function(e){
-      modalBody.classList.remove('open');
-      document.body.classList.remove('lock');
-   });
-}
+
+
+     if(openModal){
+        openModal.addEventListener('click',function(e){
+           modalBody.classList.add('open');
+        });
+     }
+    
+     if(closeX){
+        closeX.addEventListener('click',function(e){
+            modalBody.classList.remove('open');
+        });
+     }
 
 /*-------------------------------------------------------------------------------------------------*/
 const tabLink = document.querySelectorAll('.tab-link');
