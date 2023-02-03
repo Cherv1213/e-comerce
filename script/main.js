@@ -11,34 +11,28 @@ const openModal = document.querySelector('.user__basket');//кнопка отк�
 const modalBody = document.querySelector('.basket-modal');//модалка
 const closeX = document.querySelector('.close-modal'); //кнопка забкрытия внутри модалки
 
-openClose();
+ openClose();
 
-   function openClose(e){
-      if(openModal){
-         openModal.addEventListener('click',function(e){
-            modalBody.classList.add('open');
-         });
-      };
+    function openClose(e){
+       if(openModal){
+          openModal.addEventListener('click',function(e){
+             modalBody.classList.add('open');
+          });
+       };
 
-      if(closeX){
-         closeX.addEventListener('click',function(e){
-             modalBody.classList.remove('open');
-         });
-      };
-   };
-   document.addEventListener('click', (e)=>{
-      const click = e.composedPath();
-      console.log(click);
-   })
+       if(closeX){
+          closeX.addEventListener('click',function(e){
+              modalBody.classList.remove('open');
+          });
+       };
+    };
+   
+
+
+
      // если клик произошел не на modalBody('open'), то modalBody.classList.remove('open');
     
      
-   //   document.addEventListener('click',(e)=>{
-   //    const click = e.composedPath().includes(modalBody);
-   //   if (!click){
-   //       modalBody.classList.remove('open');
-   //    }
-   // })
 
 /*-------------------------------------------------------------------------------------------------*/
 
