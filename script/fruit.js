@@ -4,23 +4,31 @@ link.addEventListener('click', function(event){
    event.preventDefault();
 });
 
-const openModal = document.querySelector('.user__basket');
-const modalBody = document.querySelector('.basket-modal');
-const closeX = document.querySelector('.close-modal');
+const openModal = document.querySelector('.user__basket');//кнопка открытия модалки
+const modalBody = document.querySelector('.bkg-modal');//модалка
+const closeX = document.querySelector('.close-modal'); //кнопка забкрытия внутри модалки
 
+ openClose();
 
+    function openClose(e){
 
-     if(openModal){
-        openModal.addEventListener('click',function(e){
-           modalBody.classList.add('open');
-        });
-     }
-    
-     if(closeX){
-        closeX.addEventListener('click',function(e){
-            modalBody.classList.remove('open');
-        });
-     }
+       
+          openModal.addEventListener('click',function(e){
+             modalBody.classList.add('open');
+          });
+
+          closeX.addEventListener('click',function(e){
+              modalBody.classList.remove('open');
+          });
+       
+         
+    };
+
+    $(document).click(function (e) {
+      if ($(e.target).is('.bkg-modal')) {
+         modalBody.classList.remove('open');
+      }
+  });
 
 /*-------------------------------------------------------------------------------------------------*/
 const tabLink = document.querySelectorAll('.tab-link');

@@ -169,6 +169,25 @@
   cursor: pointer;
 }
 
+.bkg-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+  z-index: 100;
+}
+.bkg-modal.open {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+
 .basket-modal {
   position: fixed;
   top: 45%;
@@ -180,19 +199,7 @@
   padding: 1rem;
   background-color: #151515;
   border-radius: 12px;
-  z-index: 100;
   color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  pointer-events: none;
-}
-.basket-modal.open {
-  top: 50%;
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
 }
 
 .basket__amount {

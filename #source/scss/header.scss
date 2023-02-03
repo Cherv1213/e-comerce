@@ -171,6 +171,23 @@ $clr--f9f9:#F9F9F9;
    cursor: pointer;
 }
 
+.bkg-modal{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   visibility: hidden;
+   opacity: 0;
+   transition: all .3s;
+   pointer-events: none;
+   z-index: 100;
+   &.open{
+      opacity: 1;
+      pointer-events: all;
+      visibility: visible;
+   }
+}
 .basket-modal{
    position: fixed;
    top: 45%;
@@ -181,19 +198,8 @@ $clr--f9f9:#F9F9F9;
    padding: 1rem;
    background-color: #151515;
    border-radius: 12px;
-   z-index: 100;
    color: #fff;
-   visibility: hidden;
-   opacity: 0;
-   transition: all .3s;
-   pointer-events: none;
 
-   &.open{
-      top: 50%;
-      opacity: 1;
-      pointer-events: all;
-      visibility: visible;
-   }
 }
 
 
