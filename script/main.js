@@ -10,7 +10,7 @@ link.addEventListener('click', function(event){
 const openModal = document.querySelector('.user__basket');//кнопка открытия модалки
 const modalBody = document.querySelector('.bkg-modal');//модалка
 const closeX = document.querySelector('.close-modal'); //кнопка забкрытия внутри модалки
-
+const basket = document.querySelector('.basket-modal');
  openClose();
 
     function openClose(e){
@@ -24,18 +24,15 @@ const closeX = document.querySelector('.close-modal'); //кнопка забкр
               modalBody.classList.remove('open');
           });
           
-          $(document).click(function (e) {
-            if ($(e.target).is('.bkg-modal')) {
-               modalBody.classList.remove('open');
-            }
-        });
-         
+          modalBody.addEventListener('click',(e)=>{
+            const click = e.composedPath().includes(basket);
+           if(!click){
+            modalBody.classList.remove('open');
+           }
+          })
     };
-   
-   
 
-
-     // если клик произошел не на modalBody('open'), то modalBody.classList.remove('open');
+    
     
      
 
