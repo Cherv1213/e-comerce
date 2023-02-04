@@ -263,7 +263,7 @@ $clr--f9f9:#F9F9F9;
       transition: 0.4s;
    }
 }
-.chapter__list > li:hover::after{
+.chapter__list  li:hover::after{
    transform: rotateX(-180deg);
 }
 

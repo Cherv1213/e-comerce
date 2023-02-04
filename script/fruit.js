@@ -4,6 +4,19 @@ link.addEventListener('click', function(event){
    event.preventDefault();
 });
 
+// const buttons = document.querySelectorAll('.button');
+
+// buttons.forEach(function(item){
+//    item.addEventListener('click', function(e){
+//       buttons.forEach(el=>{
+//          el.classList.remove('green');
+//       });
+//       item.classList.add('green');
+//    });
+   
+// });
+//    document.querySelector('.').click();
+
 const openModal = document.querySelector('.user__basket');//кнопка открытия модалки
 const modalBody = document.querySelector('.bkg-modal');//модалка
 const closeX = document.querySelector('.close-modal'); //кнопка забкрытия внутри модалки
@@ -43,12 +56,13 @@ tabLink.forEach(function(item){
       if ( ! frutBtn.classList.contains('active')){
          tabLink.forEach(function(item){
             item.classList.remove('active');
+            item.classList.remove('green');
          });
    
          bodyContent.forEach(function(item){
             item.classList.remove('active');
          });
-   
+         frutBtn.classList.add('green');
          frutTab.classList.add('active');
          frutBtn.classList.add('active');
       };

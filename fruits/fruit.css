@@ -84,8 +84,11 @@ main {
   margin-right: 0.3125rem;
 }
 
-.grid::before {
-  content: url(../image/fruits/grid.svg);
+.tab-link svg {
+  stroke: #A9A9A9;
+  display: inline-block;
+  position: relative;
+  top: 3px;
 }
 
 .list::before {
@@ -378,10 +381,6 @@ main {
   display: none;
 }
 
-.active {
-  display: block;
-}
-
 /*-------------------------------------------------------------------------------------------------*/
 .grid-content {
   display: -ms-grid;
@@ -549,4 +548,15 @@ main {
   color: #6A983C;
   background: #F4F8EC;
   border-radius: 12px;
+}
+
+.active {
+  display: block;
+}
+
+.green {
+  color: #151515;
+}
+.green svg {
+  stroke: #6A983C;
 }

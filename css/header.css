@@ -272,7 +272,7 @@
   transition: 0.4s;
 }
 
-.chapter__list > li:hover::after {
+.chapter__list li:hover::after {
   -webkit-transform: rotateX(-180deg);
           transform: rotateX(-180deg);
 }

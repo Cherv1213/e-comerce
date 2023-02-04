@@ -64,7 +64,7 @@ main{
    font-weight: 400;
    font-size: 0.75rem;
    color: $clr--a9a9;
-
+  
    & p{
       cursor: pointer;
    }
@@ -79,14 +79,24 @@ main{
    }
 }
 
-
-.grid {
-
-   &::before{
-      content: url(../image/fruits/grid.svg);
+.tab-link{
+   & svg{
+      stroke:$clr--a9a9;
+      display: inline-block;
+      position: relative;
+      top: 3px;
    }
 }
+
+.grid {
+     
+   
+   // &::before{
+   //    content: url(../image/fruits/grid.svg);
+   // }
+}
 .list {
+ 
    &::before{
       content: url(../image/fruits/line.svg);
    }
@@ -335,9 +345,7 @@ align-items: center;
 .body-content{
    display: none;
 }
-.active{
-   display: block;
-}
+
 /*-------------------------------------------------------------------------------------------------*/
 .grid-content{
     display: grid;
@@ -478,5 +486,25 @@ align-items: center;
       color: $clr-green;
       background: #F4F8EC;
       border-radius: 12px;
+   }
+}
+
+
+
+
+
+
+
+
+
+.active{
+   display: block;
+}
+.green{
+   color: $clr-def;
+
+   & svg{
+      stroke:$clr-green;
+      
    }
 }
