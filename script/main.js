@@ -13,7 +13,7 @@ const closeX = document.querySelector('.close-modal'); //кнопка забкр
 const basket = document.querySelector('.basket-modal');
  openClose();
 
-    function openClose(e){
+    function openClose(){
 
        
           openModal.addEventListener('click',function(e){

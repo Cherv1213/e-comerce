@@ -23,7 +23,7 @@ const closeX = document.querySelector('.close-modal'); //кнопка забкр
 const basket = document.querySelector('.basket-modal');
  openClose();
 
-    function openClose(e){
+    function openClose(){
 
        
           openModal.addEventListener('click',function(e){
@@ -72,7 +72,12 @@ tabLink.forEach(function(item){
  document.querySelector('.tab-link').click();
 
 
+const ratingItemsList = document.querySelectorAll('.rating__item');
+const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
 
-
-
-
+ratingItemsArray.forEach(item =>{
+   item.addEventListener('click', () =>{
+      const { itemValue } = item.dataset;
+      item.parentNode.dataset.totalValue = itemValue;
+   })
+});
