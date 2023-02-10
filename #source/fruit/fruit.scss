@@ -69,14 +69,7 @@ main{
       cursor: pointer;
    }
 
-   & p::before{
-      position: relative;
-      top: 3px;
-      width: 1rem;
-      height: 1rem;
-      display: inline-block;
-      margin-right: 0.3125rem;
-   }
+   
 }
 
 .tab-link{
@@ -96,10 +89,7 @@ main{
    // }
 }
 .list {
- 
-   &::before{
-      content: url(../image/fruits/line.svg);
-   }
+
 }
 .prod-block{
 display: flex;
@@ -315,9 +305,55 @@ align-items: center;
    flex: 2;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .side__price {
+   width: 250px;
   flex: 2;
 }
+.price__slider {
+   margin-bottom: 1.5rem;
+  
+}
+.price__inputs {
+   display: flex;
+   justify-content: space-between;
+   gap: 2.0625rem;
+}
+.price__label{
+
+}
+.price__label:first-of-type {
+   position: relative;
+   &::after{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 120px;
+      width: 10px;
+      height: 1px;
+      background-color: $clr--a9a9;
+   }
+}
+.label__span {
+   font-weight: 600;
+   font-size: 12px;
+}
+.price__input {
+   background-color: $clr--f9f9;
+   border: 1px solid #D1D1D1;
+   padding: 0.75rem 1rem;
+   border-radius: 12px;
+}
+
 
 .side__buttons {
    display: flex;

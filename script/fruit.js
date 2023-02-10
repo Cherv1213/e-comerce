@@ -4,19 +4,6 @@ link.addEventListener('click', function(event){
    event.preventDefault();
 });
 
-// const buttons = document.querySelectorAll('.button');
-
-// buttons.forEach(function(item){
-//    item.addEventListener('click', function(e){
-//       buttons.forEach(el=>{
-//          el.classList.remove('green');
-//       });
-//       item.classList.add('green');
-//    });
-   
-// });
-//    document.querySelector('.').click();
-
 const openModal = document.querySelector('.user__basket');//кнопка открытия модалки
 const modalBody = document.querySelector('.bkg-modal');//модалка
 const closeX = document.querySelector('.close-modal'); //кнопка забкрытия внутри модалки
@@ -81,3 +68,39 @@ ratingItemsArray.forEach(item =>{
       item.parentNode.dataset.totalValue = itemValue;
    })
 });
+
+/*-------------------------------------------------------------------------------------------------*/
+const rangeSlider = document.getElementById('range-slider');
+
+if(rangeSlider){
+   noUiSlider.create(rangeSlider, {
+      start: [0, 100000],
+      connect: true,
+      step:1,
+      range: {
+          'min': [0],
+          'max': [100000]
+      }
+  });
+
+  const input0 = document.getElementById('input-0');
+  const input1 = document.getElementById('input-1');
+  const inputs = [input0,input1];
+
+  rangeSlider.noUiSlider.on('update', function(values,handle){
+   inputs[handle].value = Math.round(values[handle]);
+  });
+
+  const setRangeSlider = (i, value) => {
+   let arr = [null,null];
+   arr[i] = value;
+
+   rangeSlider.noUiSlider.set(arr)
+  };
+
+  inputs.forEach((el, index) => {
+   el.addEventListener('change', (e) =>{
+      setRangeSlider(index, e.currentTarget.value);
+   });
+  });
+}

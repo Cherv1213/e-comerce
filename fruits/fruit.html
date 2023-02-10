@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" href="" type="image/gif" sizes="16x16">
+   <link rel="stylesheet" href="nouislider.css">
    <link rel="stylesheet" href="fruit.css">
    <title>Fruit and vegetables</title>
 </head>
@@ -122,7 +123,6 @@
                      <path d="M1.33398 8H14.6673" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
                      <path d="M1.33398 11.3333H14.6673" stroke="inherit" stroke-linecap="round" stroke-linejoin="round"/>
                      </svg>
-                     
                   List view
                </p>
                <div class="prod-block">
@@ -276,6 +276,17 @@
                   </div>
                   <div class="side__price">
                      <h4 class="title">Price</h4>
+                     <div class="price__slider" id="range-slider"></div>
+                     <div class="price__inputs">
+                        <label class="price__label">
+                           <div class="label__span">Min</div>
+                           <input type="number" min="0" max="100000" placeholder="0" class="price__input" id="input-0"></input>
+                        </label>
+                        <label class="price__label">
+                           <div class="label__span">Max</div>
+                           <input type="number" min="0" max="100000" placeholder="100000" class="price__input" id="input-1"></input>
+                        </label>
+                     </div>
                   </div>
                   <div class="side__buttons">
                      <button name="frutButton" class="button" type="submit">Apply</button>
@@ -499,6 +510,8 @@
       <p class="copy">Copyright © 2020 YAYA.com</p>
    </div>
 </footer>   </div>
+   <script src="../script/nouislider.min.js"></script>
    <script src="../script/fruit.js"></script>
+ 
 </body>
 </html>
