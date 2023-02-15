@@ -5,8 +5,8 @@ link.addEventListener('click', function(event){
 });
 
 const openModal = document.querySelector('.user__basket');//кнопка открытия модалки
-const modalBody = document.querySelector('.bkg-modal');//модалка
 const closeX = document.querySelector('.close-modal'); //кнопка забкрытия внутри модалки
+const modalBody = document.querySelector('.bkg-modal');//модалка
 const basket = document.querySelector('.basket-modal');
  openClose();
 
@@ -15,6 +15,7 @@ const basket = document.querySelector('.basket-modal');
        
           openModal.addEventListener('click',function(e){
              modalBody.classList.add('open');
+             document.body.classList.add('lock');
           });
 
           closeX.addEventListener('click',function(e){

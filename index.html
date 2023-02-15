@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/main.css">      
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
       <link rel="icon" href="" type="image/gif" sizes="16x16">
       <title>E-comerce</title>
@@ -60,15 +60,32 @@
                   <img src="image/header/user.svg" alt="">
                </a>
                   <div class="user__basket">
-                     <img src="image/header/basket.svg" alt="">
-                     <p class="basket__amount">3</p>
+                    <img src="image/header/basket.svg" alt="">
+                     <p class="basket__amount">2</p>
                   </div>
+
+
                   <div class="bkg-modal">
                      <div class="basket-modal">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis officiis maiores, hic itaque velit quas amet rerum. Eos repellendus pariatur maxime magni natus quibusdam eaque assumenda voluptatibus! Perspiciatis, dicta illum?</p>
-                        <span class="close-modal">X</span>
+                        <h3 class="modal__title">Shopping cart</h3>
+                        <div class="modal__body">
+
+                        </div>
+                        <div class="modal__total">
+                           <div class="total__subtotal">
+                              <h4>Subtotal</h4>
+                              <span class="total__total-price">0</span>
+                              <span>USD</span>
+                           </div>
+                           <div class="total__buttons">
+                              <button class="continue close-modal">Continue shopping</button>
+                              <button class="Checkout">Go to Checkout</button>
+                           </div>
+                        </div>
                      </div>
                   </div>
+
+
          </div>
       </div>
 
@@ -191,146 +208,154 @@
             </div>
             <div class="best__body">
                <div class="body__tabs" id="tab_1">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="01">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="02">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="03">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div class="body__tabs" id="tab_2">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="04">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="05">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div  class="body__tabs" id="tab_3">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="../image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="06">
+                     <a href="#" class="best__image"><img src="../image/best/card.png" alcontentt="" class="best__image"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis molestiae, hic asperiores sequi iure nesciunt quo saepe tempora dolorem minus, laborum quidem modi pariatur iste? Totam esse pariatur hic nobis! </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="07">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="08">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div  class="body__tabs" id="tab_4">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="09">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="10">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="11">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div  class="body__tabs" id="tab_5">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="12">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="13">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="14">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
@@ -352,146 +377,154 @@
             </div>
             <div class="best__body">
                <div class="second-body" id="tab_11">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="15">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="16">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="17">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div class="second-body" id="tab_12">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="18">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="19">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div  class=" second-body" id="tab_13">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="20">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis molestiae, hic asperiores sequi iure nesciunt quo saepe tempora dolorem minus, laborum quidem modi pariatur iste? Totam esse pariatur hic nobis! </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="21">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="22">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div  class=" second-body" id="tab_14">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="23">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="24">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="25">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
                <div  class=" second-body" id="tab_15">
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="26">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
                         <p class="best__number">1.48 USD</p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="27">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
-                  <article class="best__article">
-                     <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+                  <article class="best__article" data-id="28">
+                     <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                      <span class="discount">- 36 %</span>
                      <h4 class="best__title">Product Title</h4>
                      <p class="best__text">Space for a small product description </p>
                      <div class="best__price">
-                        <p class="best__number">1.48 USD<span>48.56</span></p>
-                        <a href="#" class="best__button">Buy now</a>
+                        <p class="best__number">1.48 USD</p>
+                        <span>48.56</span>
+                        <button class="best__button">Buy now</button>
                      </div>
                   </article>
                </div>
@@ -538,44 +571,44 @@
                <a href="#" class="customers__button">Button</a>
             </div>
             <div class="headline__body">
-               <article class="best__article">
-                  <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+               <article class="best__article" data-id="29">
+                  <a href="#"><img src="image/best/card.png" alt="" class="best__image"></a>
                   <span class="discount">- 36 %</span>
                   <h4 class="best__title">Product Title</h4>
                   <p class="best__text">Space for a small product description </p>
                   <div class="best__price">
                      <p class="best__number">1.48 USD</p>
-                     <a href="#" class="best__button">Buy now</a>
+                     <button class="best__button">Buy now</button>
                   </div>
                </article>
-               <article class="best__article">
-                  <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+               <article class="best__article" data-id="30">
+                  <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                   <span class="discount">- 36 %</span>
                   <h4 class="best__title">Product Title</h4>
                   <p class="best__text">Space for a small product description </p>
                   <div class="best__price">
                      <p class="best__number">1.48 USD</p>
-                     <a href="#" class="best__button">Buy now</a>
+                     <button class="best__button">Buy now</button>
                   </div>
                </article>
-               <article class="best__article">
-                  <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+               <article class="best__article" data-id="32">
+                  <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                   <span class="discount">- 36 %</span>
                   <h4 class="best__title">Product Title</h4>
                   <p class="best__text">Space for a small product description </p>
                   <div class="best__price">
                      <p class="best__number">1.48 USD</p>
-                     <a href="#" class="best__button">Buy now</a>
+                     <button class="best__button">Buy now</button>
                   </div>
                </article>
-               <article class="best__article">
-                  <a href="#" class="best__image"><img src="image/best/card.png" alt="" class="best__image"></a>
+               <article class="best__article" data-id="33">
+                  <a href="#" class="best__image"><img src="image/best/card.png" alt="content" class="best__img"></a>
                   <span class="discount">- 36 %</span>
                   <h4 class="best__title">Product Title</h4>
                   <p class="best__text">Space for a small product description </p>
                   <div class="best__price">
                      <p class="best__number">1.48 USD</p>
-                     <a href="#" class="best__button">Buy now</a>
+                     <button class="best__button">Buy now</button>
                   </div>
                </article>
             </div>
@@ -763,6 +796,7 @@
       <p class="copy">Copyright © 2020 YAYA.com</p>
    </div>
 </footer>   </div>
+   <script src="script/basket.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="script/main.js"></script>
 </body>

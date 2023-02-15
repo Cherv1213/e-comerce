@@ -114,7 +114,9 @@
            flex: 1 1 auto;
  }
 
- 
+ ::selection{
+  background-color: rgb(19, 196, 87);
+ }
 
  
  

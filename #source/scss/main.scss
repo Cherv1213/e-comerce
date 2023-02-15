@@ -179,6 +179,7 @@ $pad-top-bot: clamp(1rem, 4vw,4rem);
       position: relative;
       display: flex;
       flex-direction: column;
+      position: relative;
    }
    .best__image {
       margin-bottom: 1rem;
@@ -215,19 +216,23 @@ $pad-top-bot: clamp(1rem, 4vw,4rem);
       display: flex;
       justify-content: space-between;
       align-items: center;
-   }
-   .best__number {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: calc(27/18);
 
       & span{
-         display: block;
+         position: absolute;
+         bottom: 0.625rem;
+         left: 1rem;
          font-weight: 600;
          font-size: 0.75rem;
          text-decoration: line-through;
          color: #A9A9A9;
       }
+   }
+   .best__number {
+      font-weight: 600;
+      font-size: 1.125rem;
+      line-height: calc(27/18);
+
+    
    }
    .best__button {
       font-weight: 700;
@@ -488,4 +493,29 @@ $pad-top-bot: clamp(1rem, 4vw,4rem);
          display: inline-block;
          padding-left: 1rem;
       }
+   }
+   .rating {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+   }
+   .rating__item {
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: .3s;
+     color: grey;
+   }
+   .rating__item:hover,
+   .rating__item:hover ~ .rating__item{
+      color: #e9da05;
+   }
+   .rating[data-total-value="1"] .rating__item:nth-child(n + 5),
+   .rating[data-total-value="2"] .rating__item:nth-child(n + 4),
+   .rating[data-total-value="3"] .rating__item:nth-child(n + 3),
+   .rating[data-total-value="4"] .rating__item:nth-child(n + 2),
+   .rating[data-total-value="5"] .rating__item:nth-child(n + 1){
+      color: #e9da05;
+   }
+   .lock{
+      overflow: hidden;
    }

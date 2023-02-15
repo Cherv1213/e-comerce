@@ -1,4 +1,5 @@
-"use strict"
+
+
 const link = document.querySelector('.middle__image');
 
 link.addEventListener('click', function(event){
@@ -18,18 +19,25 @@ const basket = document.querySelector('.basket-modal');
        
           openModal.addEventListener('click',function(e){
              modalBody.classList.add('open');
+             document.body.classList.add('lock');
+             
           });
+
+          
 
           closeX.addEventListener('click',function(e){
               modalBody.classList.remove('open');
+              document.body.classList.remove('lock');
           });
           
           modalBody.addEventListener('click',(e)=>{
             const click = e.composedPath().includes(basket);
            if(!click){
             modalBody.classList.remove('open');
+            document.body.classList.remove('lock');
            }
           })
+          calcCardPrice();
     };
 
 /*-------------------------------------------------------------------------------------------------*/
@@ -203,3 +211,12 @@ new Swiper('.customers-swiper',{
 });
 
 
+const ratingItemsList = document.querySelectorAll('.rating__item');
+const ratingItemsArray = Array.prototype.slice.call(ratingItemsList);
+
+ratingItemsArray.forEach(item =>{
+   item.addEventListener('click', () =>{
+      const { itemValue } = item.dataset;
+      item.parentNode.dataset.totalValue = itemValue;
+   })
+});

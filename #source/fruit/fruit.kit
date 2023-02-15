@@ -197,7 +197,7 @@
                      </div>
                   </div>
                   <div class="side__buttons">
-                     <button name="frutButton" class="button" type="submit">Apply</button>
+                     <button name="frutButton" class="button" type="button">Apply</button>
                      <button class="button-reset" type="reset">Reset</button>
                   </div>
                </form>
@@ -209,7 +209,6 @@
                            <span class="discount">- 36 %</span>
                            <h4 class="best__title">Product Title</h4>
                            <p class="best__text">Space for a small product description </p>
-
                            <div class="rating" data-total-value="0">
                               <div class="rating__item" data-item-value="5">★</div>
                               <div class="rating__item" data-item-value="4">★</div>
@@ -217,14 +216,15 @@
                               <div class="rating__item" data-item-value="2">★</div>
                               <div class="rating__item" data-item-value="1">★</div>
                            </div>
-
                            <div class="best__price">
-                              <p class="best__number">1.48 USD<span>48.56</span></p>
-                              <a href="#" class="best__button">Buy now</a>
+                              <p class="best__number">1.48 USD</p>
+                              <span>48.56</span>
+                              <button class="best__button">Buy now</button>
                            </div>
                         </article>
                      </div>
                   </div>
+
                   <div id="data-2" class="body-content">
                     <div class="line-content">
                      <article class="line-item">
@@ -242,7 +242,7 @@
                                     <div class="rating__item" data-item-value="2">★</div>
                                     <div class="rating__item" data-item-value="1">★</div>
                                  </div>
-                                 <div class="rating"></div>
+                               
                                  <div class="left__decriptions">
                                     <ul>
                                        <li>Fresheness</li>
@@ -259,10 +259,11 @@
                                  </div>
                                </div>
                                 <div class="line-right">
-                                    <p class="best__number">1.48 USD<span>48.56</span></p>
+                                    <p class="best__number">1.48 USD</p>
+                                    <span>48.56</span>
                                     <p class="right-delivery">Free Shipping<span>Delivery in 1 day</span></p>
                                     <a href="#" class="best__button">Product Detail</a>
-                                    <p class="right-wish">Add to wish list</p>
+                                    <button class="right-wish">Add to wish list</button>
                                 </div>
                            </div>
                      </article>
@@ -287,8 +288,8 @@
       </main>
       <!--@import ../kit/footer.html-->
    </div>
+   <script src="../script/basket.js"></script>
    <script src="../script/nouislider.min.js"></script>
    <script src="../script/fruit.js"></script>
- 
 </body>
 </html>
